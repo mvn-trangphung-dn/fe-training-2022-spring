@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+</head>
+
+<body>
+  <section>
+    <h2>Sum of the two given integers</h2>
+    Enter a:
+    <input type="number" id="a" name="a" value="5">
+    Enter b:
+    <input type="number" id="b" name="b" value="10">
+    <p>
+      Click the button to submit.
+      <button onclick="sum()">OK</button>
+    </p>
+    <p>Result: <span id="ex1"></span></p>
+  </section>
+
+  <section>
+    <h2>Absolute difference between a specified number and 19</h2>
+    Enter number:
+    <input type="number" id="x" name="x" value="12">
+    <p>
+      Click the button to submit.
+      <button onclick="absolute()">OK</button>
+    </p>
+    <p>Result: <span id="ex2"></span></p>
+  </section>
+
+  <section>
+    <h2>A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit.</h2>
+    Enter number:
+    <input type="text" id="y" name="y" value="1*9">
+    <h5>Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3</h5>
+    <p>
+      Click the button to submit.
+      <button onclick="findNumber(3)">OK</button>
+    </p>
+    <h5>Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6</h5>
+    <p>
+      Click the button to submit.
+      <button onclick="findNumber(6)">OK</button>
+    </p>
+    <p>Result: <span id="ex3"></span></p>
+  </section>
+
+</body>
+<script type="text/javascript" src="es5.js"></script>
+
+</html>

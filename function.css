@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-3 {
+  padding: 0 5px;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-function {
+  margin: 20px 0;
+}
+.link-attr::after {
+  content: attr(href);
+}
+
+.wapper-scale {
+  margin: 20px 0;
+}
+
+.wapper-scale .div-calc {
+  background-color: rgba(194, 189, 118, 0.6);
+  height: 320px;
+  width: calc(100% / 2);
+}
+
+.wapper-scale .div-rgb {
+  color: rgba(22, 20, 7, 0.548);
+}
+
+.wapper-scale .div-calc:hover {
+  transform: rotate(-2deg);
+}
+
+.wapper-scale .img-scale {
+  width: 300px;
+  transition: transform linear 0.2s;
+}
+
+.wapper-scale .img-scale:hover {
+  transform: scale(1.05);
+}
+
+.wapper-translate .div-translate,
+.div-translate1,
+.div-translate2 {
+  height: 86px;
+  background-color: var(--yellow);
+  position: relative;
+  margin-top: 46px;
+}
+
+.wapper-translate .div-translate span {
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.wapper-translate .div-translate1 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.wapper-translate .div-translate2 span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* transform: translateY(-50%); */
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.box {
+  margin-top: 50px;
+}
+
+.box1 {
+  height: 100px;
+  background: linear-gradient(to right, orange, yellow);
+}
+
+.box2 {
+  height: 100px;
+  background-image: linear-gradient(orange, yellow);
+}
+
+.box3 {
+  height: 100px;
+  background: linear-gradient(orange, rgb(235, 184, 16), white);
+}
+
+.box4 {
+  height: 100px;
+  background: linear-gradient(orange, yellow, white);
+} 
