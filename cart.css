@@ -1,0 +1,44 @@
+body {
+  padding-top: 80px;
+}
+  
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.modal-dialog td,th {
+  border: none;
+}
+
+.show-cart li {
+  display: flex;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
