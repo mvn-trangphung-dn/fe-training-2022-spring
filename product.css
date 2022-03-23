@@ -7,11 +7,30 @@ body {
   margin: 0 auto;
 }
 
+.title-page {
+  border-left: 10px solid black;
+  padding-left: 10px;
+}
+
+.new-product {
+  margin-top: 20px;
+}
+
+.sub-title {
+  border-bottom: 1px solid gray;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+form {
+  margin: 30px 0;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 td,
@@ -25,8 +44,10 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.modal-dialog td,th {
-  border: none;
+.total-cart {
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
 }
 
 .show-cart li {

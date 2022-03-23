@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShoppingCart</title>
+  <title>DOM-BOM</title>
   <link rel="stylesheet" href="product.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -14,22 +14,44 @@
 </head>
 
 <body>
+  <!-- Nav -->
   <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
     <div class="row">
       <div class="col">
         <button class="clear-cart btn btn-danger" onclick="clearCart()">Clear Cart</button>
-        <a href="product.html" class="btn btn-primary">Home</a>
+        <a href="cart.html" class="btn btn-primary">Cart(<span id="totalCount"></span>)</a>
       </div>
     </div>
   </nav>
   <div class="container">
-    <h3 class="title-page">Cart Page</h3>
-    <div>
-      <table class="show-cart" id="showCart">
+    <h3 class="title-page">Home Page</h3>
+    <section class="new-product">
+      <h6 class="sub-title">Add New Product:</h6>
+      <form action="">
+        <label for="nameProd">Name Product:</label>
+        <input type="text" id="nameProd" name="nameProd">
+        <label for="priceProd">Price Product:</label>
+        <input type="text" id="priceProd" name="priceProd">
+        <input type="button" onclick="newProduct()" class="addBtn" value="Submit">
+      </form> 
+    </section>
+    <section>
+      <h6 class="sub-title">List Product:</h6>
+      <table id="myTable">  
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="bodyTable">
+        </tbody>
       </table>
-      <div>Total price: $<span class="total-cart" id="totalCart"></span></div>
-    </div>
+    </section>
   </div>
+
 </body>
-<script type="text/javascript" src="cart.js"></script>
+<script type="text/javascript" src="product.js"></script>
+
 </html>
