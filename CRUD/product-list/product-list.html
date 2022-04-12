@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="product-list.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+  </style>
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- <div class="header-top">
+      <div class="container content-wapper">
+        <a href="/" class="header-logo">
+          <img src="https://i.pinimg.com/736x/46/9a/0c/469a0cd7f958cd295ba642f110901c5d.jpg" alt="logo">
+        </a>
+        <ul class="header-actions socials-wapper">
+          <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    </div> -->
+    <nav class="header-nav">
+      <div class="container content-wapper">
+        <ul class="header-menu">
+          <li><a href="../product-list/product-list.html">Home</a></li>
+          <li><a href="../product-form/product-form.html">New Product</a></li>
+        </ul>
+        <form class="footer-newsletter">
+          <label for="search">Search</label>
+          <input type="text" id="inputSearch" name="search">
+          <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="section-slideshow">
+      <ul class="slideshow-list">
+        <li class="slideshow-item">
+          <img src="https://qph.fs.quoracdn.net/main-qimg-188a93746656e5315b36245e18f678bf" alt="alt slideshow 1">
+        </li>
+      </ul>
+      <div class="slideshow-btn-action">
+        <button class="btn btn-pre"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="btn btn-next"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+      <ul class="slideshow-pagination">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+    <section class="section-product">
+      <div class="container">
+        <h2 class="section-title">Product List</h2>
+        <ul class="product-list row" id="productList">
+        </ul>
+      </div>
+    </section>
+    <section class="section-banner-txt">
+      <h2>Consectetur adipisicing elit</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nulla aut iste dignissimos</p>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Copyright Monstarlab Co., Ltd 2022</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/26bfa5fbae.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="product-list.js"></script>
+</body>
+</html>
