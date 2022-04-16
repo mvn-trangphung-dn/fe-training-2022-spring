@@ -1,1 +1,0 @@
-# fe-training-2022-spring
