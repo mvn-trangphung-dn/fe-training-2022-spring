@@ -1,3 +1,5 @@
+import NavMenuPage from './NavMenuPage';
+
 function PageHeader() {
   return (
     <header className="page-header">
@@ -15,13 +17,8 @@ function PageHeader() {
     </div>
     <nav className="header-nav">
       <div className="container content-wapper">
-        <ul className="header-menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+        <NavMenuPage></NavMenuPage>
+        
         <ul className="socials socials-wapper">
           <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
           <li><a href=""><i className="fa-brands fa-facebook"></i></a></li>

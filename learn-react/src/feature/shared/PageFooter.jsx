@@ -5,7 +5,7 @@ function PageFooter() {
     <div className="footer-top">
       <div className="container content-wapper">
         <form className="footer-newsletter">
-          <label htmlFor="">Newletter</label>
+          <label htmlFor="">New Letter</label>
           <input type="text"/>
           <button type="submit"><i className="fa-solid fa-paper-plane"></i></button>
         </form>
