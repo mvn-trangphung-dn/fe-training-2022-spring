@@ -1,0 +1,131 @@
+// Font family
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+// Basic Colors
+//$navy: #1ab394;       // Primary color
+$navy: #bfac8a;
+$dark-gray: #c2c2c2;  // Default color
+$blue: #1c84c6;       // Success color
+$lazur: #23c6c8;      // Info color
+$yellow: #f8ac59;     // Warrning color
+$red: #ED5565;        // Danger color
+$white: #ffffff;
+$yellow-light: #f3cf7a;
+$yellow: #be6a15;
+$yellow-dark: #ac3f21;
+$yellow-so-dark: #6e3b3b;
+
+//difine color in tabview
+$matte-gray: #aaaaaa;
+$gray-bold: #555555;
+$suva-grey: #888888;
+$silver-bold: #dddddd;
+$siler: #e6e6e6;
+$matte-silver: #eeeeee;
+$primary: #1ab394;       // Primary color
+$alabaster: #F8F8F8;
+
+// Various colors
+$text-color: #676a6c;   // Body text
+$text-disabled: #a29f99;
+$gray: #f3f3f4;         // Background wrapper color
+$light-gray: #D1DADE;   // Default label, badget
+$label-badget-color: #5E5E5E;
+$light-blue: #f3f6fb;
+$light-pink: #fbf4f5;   // Background thanks message item
+$light-silver: #f9f8f8; // Background thanks message dashboard
+$sign-text-color: #8b8f89;
+
+
+// Spiner color and margin
+$spin-color: $navy;
+$spin-margin: 0 auto;
+
+// IBOX colors ( default panel colors)
+$border-color: #e7eaec;     // IBox border
+$ibox-title-bg: #ffffff;     // IBox Background header
+$ibox-content-bg: #ffffff;   // IBox Background content
+
+//Sidebar width
+$sidebar-width: 220px;
+
+// Link
+$a-blue: #9B8C79;
+
+// Boxed layout width
+$boxed-width: 1200px;
+$boxed-backgound: url("../img/patterns/shattered.png");
+
+//Border radius for buttons
+$btn-border-radius: 3px;
+
+//Navigation
+$nav-bg: #2F4050;
+$nav-profil-pattern: url("../img/patterns/header-profile.png") no-repeat;
+$nav-text-color: #a7b1c2;
+
+// Color
+$social-color: (
+  text-hover: #fff,
+  skype: #00AFF0,
+  google: #EA3B02,
+  chatwork: #E8453C,
+  other: #46B0E2,
+  github: #333
+);
+
+// Border radius for social icons
+$social-border-radius: 50%;
+
+// icon font-awesome
+$icon-fa: (
+  add: "\f067",
+  analytics: "\f201",
+  approved: "\f058",
+  attachment: "\f15b",
+  back: "\f060",
+  calendar: "\f073",
+  cancel: "\f05e",
+  copy: "\f0c5",
+  edit: "\f040",
+  edit-square: "\f044",
+  export: "\f1c3",
+  eye: "\f06e",
+  eye-slash: "\f070",
+  grid: "\f00a",
+  info: "\f05a",
+  list: "\f03a",
+  org: "\f0e8",
+  preview: "\f022",
+  plane: "\f072",
+  reject: "\f00d",
+  reject-circle: "\f057",
+  remove: "\f1f8",
+  reply: "\f112",
+  reset: "\f01e",
+  save: "\f0c7",
+  search: "\f002",
+  send: "\f1d8",
+  social-chatwork: "\f086",
+  social-email: "\f0e0",
+  social-skype: "\f17e",
+  social-user: "\f2bd",
+  sign-out: "\f08b",
+  submit: "\f00c",
+  sync: "\f021",
+  view: "\f002",
+  delay: "\f017"
+);
+
+$bt-status-color: (
+  danger: #f2dede,
+  info: #d9edf7,
+  success: #dff0d8,
+  warning: #fcf8e3
+);
+$bt-status-border: (
+  success: #c3e6cb
+);
