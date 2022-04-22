@@ -1,0 +1,29 @@
+.app {
+  margin: auto 20px;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0 !important;
+}
+
+form {
+  text-align: center;
+  padding: 0 25%;
+  .label-form {
+    background-color: white;
+    padding: 0 3px;
+  }
+  .title-gender {
+    text-align: left;
+    padding: 0 15px;
+  }
+  .gender-group {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .textarea-form {
+    padding: 10px;
+  }
+}
