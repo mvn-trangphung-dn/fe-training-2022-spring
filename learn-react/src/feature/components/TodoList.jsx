@@ -1,30 +1,30 @@
 import React from 'react';
-import IconButton from '@material-ui/core/IconButton';
-import DeleteIcon from '@material-ui/icons/Delete';
-import { List, ListItem, ListItemSecondaryAction, ListItemText, Checkbox } from '@material-ui/core';
+import TodoItem from './TodoItem'
 
-const TodoList = ({ users, deleteUser }) => (
-  <List>
-    {users.map((user, index) => (
-      <ListItem key={index.toString()} dense button>
-        <Checkbox tabIndex={-1} disableRipple />
-        <ListItemText primary={user.name} />
-        <ListItemText primary={user.password} />
-        <ListItemText primary={user.gender} />
-        <ListItemText primary={user.comment} />
-        <ListItemText primary={user.country} />
-        <ListItemSecondaryAction>
-          <IconButton
-            aria-label="Delete"
-            onClick={() => {
-              deleteUser(index);
-            }}>
-            <DeleteIcon />
-          </IconButton>
-        </ListItemSecondaryAction>
-      </ListItem>
-    ))}
-  </List>
-);
-
+const TodoList = ({ users, deleteUser }) => {
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Password</th>
+          <th>Gender</th>
+          <th>Comment</th>
+          <th>Country</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {users.map((user, index)=> (
+          <TodoItem 
+            user={user}
+            key={index} 
+            deleteUser={() => {
+              deleteUser(index, true);
+            }}/>
+        ))}
+      </tbody>
+    </table>
+  )
+}
 export default TodoList;
