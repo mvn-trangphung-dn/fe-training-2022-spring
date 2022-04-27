@@ -1,16 +1,14 @@
 import './App.css';
-import './assets/styling/styles.scss'
-import PageHeader from './feature/shared/PageHeader';
-import PageFooter from './feature/shared/PageFooter';
-import PageHome from './feature/components/HomePage';
+import './assets/styling/styles.scss';
+import FormPage from './feature/pages/FormPage';
+import HomePage from './feature/pages/HomePage';
 
 function App() {
   return (
-    <>
-      <PageHeader />
-      <PageHome />
-      <PageFooter />
-    </>
+    <div className="App">
+      <FormPage />
+      <HomePage />
+    </div>
   );
 }
 
