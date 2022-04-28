@@ -1,0 +1,48 @@
+.header-top {
+  height: 80px;
+  background-color: $yellow-light;
+}
+
+
+.header-logo img {
+  width: 80px;
+}
+
+.header-actions li a {
+  color: $white;
+}
+
+.header-actions li a:hover {
+  color: $yellow-dark;
+}
+
+.header-nav {
+  height: 50px;
+  background-color: $yellow;
+}
+
+.header-menu {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu li a {
+  color: $white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header-menu li a:hover {
+  color: $yellow-dark;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+.socials li a {
+  color: $white;
+}
