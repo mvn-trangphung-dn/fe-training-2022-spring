@@ -1,16 +1,20 @@
 import './App.css';
-import './assets/styling/styles.scss'
-import PageHeader from './feature/shared/PageHeader';
-import PageFooter from './feature/shared/PageFooter';
-import PageHome from './feature/components/HomePage';
+import './assets/styling/styles.scss';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import { Header, Footer } from './feature/layouts';
+import { Home, AboutUs, ProductList } from './feature/pages'
 
 function App() {
   return (
-    <>
-      <PageHeader />
-      <PageHome />
-      <PageFooter />
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductList />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

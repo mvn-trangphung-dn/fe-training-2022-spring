@@ -1,0 +1,18 @@
+.page-main {
+  min-height: calc(100vh - 157px);
+  .page-title {
+    margin: 20px 0;
+    padding-left: 5px;
+    border-left: 5px solid $yellow;
+  }
+  .sub-title {
+    font-size: 16px;
+    font-style: italic;
+    color: $yellow;
+    margin-bottom: 10px;
+  }
+  .center-text {
+    text-align: center;
+  }
+  
+}

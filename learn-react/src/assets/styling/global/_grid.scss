@@ -3,7 +3,7 @@
 }
 .row {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .mb30 {
   margin-bottom: 30px;
