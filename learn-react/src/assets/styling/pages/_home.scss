@@ -77,11 +77,25 @@
 
 .product-item .product-img img {
   border-radius: 8px;
-  height: 500px;
+  height: 250px;
 }
 
 .product-item  .product-info {
   padding: 10px 0 15px;
+}
+
+.product-item .product-info .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item .product-info button {
+  width: 100%;
+  padding: 5px 0;
+  background: $yellow;
+  color: $white;
+  border: none;
 }
 
 .product-item  .product-info .product-name {
@@ -154,3 +168,45 @@
   border-radius: 8px;
   width: 100%;
 }
+
+.product-detail {
+  padding: 5% 0;
+}
+
+.product-detail img {
+  height: auto;
+  width: 300px;
+}
+
+.product-detail .product-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-action {
+  background-color: $yellow;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    input {
+      margin: 5px 0;
+      height: 34px;
+      padding: 5px 10px;
+    }
+  }
+  .footer-form {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+

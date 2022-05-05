@@ -3,9 +3,9 @@ export default function PageFooter() {
   return (
     <footer className="page-footer">
     <div className="footer-top">
-      <div className="container content-wapper">
+      <div className="container content-wrapper">
       <span>Please raise feedback or questions on <a target="_blank" href="">GitHub</a></span>
-      <div><a class="link-normal" target="_blank" href="">React Learning</a>&nbsp;©&nbsp;&nbsp;<strong>Monstarlab Vietnam Co., Ltd. 2022</strong></div>
+      <div><a className="link-normal" target="_blank" href="">React Learning</a>&nbsp;©&nbsp;&nbsp;<strong>Monstarlab Vietnam Co., Ltd. 2022</strong></div>
       </div>
     </div>
   </footer>

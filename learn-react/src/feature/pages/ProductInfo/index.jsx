@@ -11,29 +11,25 @@ function ProductInfo() {
         .then((response) => response.json())
         .then((item) => setProduct(item));
     };
-    
     getProduct();
   }, [id]);
 
   return (
     <>
-     {
-      product.lenght > 0 && (
-        <div className="container">
-          <div className="product row">
-            <div className="product-img col-6">
-              <img src={product.image} alt={product.title} />
-            </div>
-            <div className="product-info col-6">
-              <h3>{product.title}</h3>
-              <h4>$ {product.price}</h4>
-              <p>{product.description}</p>
-            </div>
+      <div className="container">
+        <div className="product-detail row">
+          <div className="product-img col-6">
+            <img src={product.image} alt={product.title}/>
           </div>
-        </div>)
-     }
+          <div className="product-info col-6">
+            <h3>{product.title}</h3>
+            <h4>$ {product.price}</h4>
+            <p>{product.description}</p>
+          </div>
+        </div>
+      </div>
     </>
-    );
+  );
 }
 
 export default ProductInfo;

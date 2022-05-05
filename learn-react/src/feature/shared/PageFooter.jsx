@@ -3,7 +3,7 @@ function PageFooter() {
   return (
     <footer className="page-footer">
     <div className="footer-top">
-      <div className="container content-wapper">
+      <div className="container content-wrapper">
         <form className="footer-newsletter">
           <label htmlFor="">New Letter</label>
           <input type="text"/>
@@ -19,7 +19,7 @@ function PageFooter() {
     </div>
     <div className="footer-middle">
       <div className="container">
-        <div className="content-wapper row">
+        <div className="content-wrapper row">
 
           <div className="footer-middle-col col-3">
             <h3>Footer Links</h3>

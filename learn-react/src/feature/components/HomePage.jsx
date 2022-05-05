@@ -31,7 +31,7 @@ function PageHome() {
     </section>
     <section className="section-partner">
       <div className="container">
-        <ul className="partner-list row content-wapper">
+        <ul className="partner-list row content-wrapper">
           <li className="partner-item">
             <ProductPartner product={{imgProduct: "https://i.pinimg.com/474x/3c/c3/e2/3cc3e2b6d565d5d8ae4baef17cad025a.jpg"}}></ProductPartner>
           </li>

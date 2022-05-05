@@ -1,29 +1,44 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaCartArrowDown, FaHeart, FaUserAlt, FaSignInAlt } from "react-icons/fa";
 
-export default function PageHeader() {
+function Header() {
   return (
-    <header className="page-header">
-    <nav className="header-nav">
-      <div className="container content-wapper">
-        <ul className="header-menu">
-          <li>
-            <Link to="/">Home</Link>
-          </li> 
-          <li>
-            <Link to="/products">Products</Link>
-          </li>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-        </ul>
-        
-        <ul className="socials socials-wapper">
-          <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
-          <li><a href=""><i className="fa-brands fa-facebook"></i></a></li>
-          <li><a href=""><i className="fa-brands fa-google-plus-g"></i></a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  )
+    <div className="page-header">
+      <nav className="header-nav">
+        <div className="container content-wrapper">
+          <ul className="header-menu">
+            <li className="nav-links-item">
+              <NavLink to="/">
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-links-item">
+              <NavLink to="/products">
+                Products
+              </NavLink>
+            </li>
+            <li className="nav-links-item">
+              <NavLink to="/about-us">
+                About us
+              </NavLink>
+            </li>
+          </ul>
+          <ul className="socials socials-wrapper">
+            <li className="nav-links-item">
+              <NavLink to="/login">
+                <FaSignInAlt />
+              </NavLink>
+            </li>
+            <li className="nav-links-item">
+              <NavLink to="/account">
+                <FaUserAlt />
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
 }
+
+export default Header;
