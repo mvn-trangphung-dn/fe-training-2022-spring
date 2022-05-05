@@ -1,15 +1,15 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Header, Footer } from './feature/layouts';
+import { Header, Footer } from './features/layouts';
 import PrivateRoute from "./core/guards/PrivateRoute/index.jsx";
-import { Home, AboutUs } from "./feature/pages";
-import Register from "./feature/auth/Register";
-import Login from "./feature/auth/Login";
-import ProductInfo from "./feature/pages/ProductInfo";
+import { Home, AboutUs } from "./features/pages";
+import Register from "./features/auth/Register";
+import Login from "./features/auth/Login";
+import ProductInfo from "./features/pages/ProductInfo";
 
-// const Auth = React.lazy(() => import('./feature/auth/Auth/index.jsx'));
-const Account = React.lazy(() => import('./feature/account/Account/index.jsx'));
-const ProductList = React.lazy(() => import('./feature/pages/ProductList/index.jsx'));
+// const Auth = React.lazy(() => import('./features/auth/Auth/index.jsx'));
+const Account = React.lazy(() => import('./features/account/Account/index.jsx'));
+const ProductList = React.lazy(() => import('./features/pages/ProductList/index.jsx'));
 
 export default function App() {
   return (
