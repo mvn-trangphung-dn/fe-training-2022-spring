@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { FaCartArrowDown, FaHeart, FaUserAlt, FaSignInAlt } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const favorites = useSelector((state) => state.fav.value);
+
   return (
     <div className="page-header">
       <nav className="header-nav">
@@ -33,6 +36,12 @@ function Header() {
               <NavLink to="/account">
                 <FaUserAlt />
               </NavLink>
+            </li>
+            <li className="nav-links-item icon-fav-header">
+              <FaHeart/>
+              {!!favorites.length && (
+                <span className="fav-count">{favorites.length}</span>
+              )}
             </li>
           </ul>
         </div>

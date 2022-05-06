@@ -46,3 +46,19 @@
 .socials li a {
   color: $white;
 }
+
+.icon-fav-header {
+  color: white;
+  position: relative;
+  .fav-count {
+    position: absolute;
+    top: -50%;
+    font-size: 12px;
+    color: white;
+    background: red;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+  }
+}

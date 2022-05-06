@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaHeart } from "react-icons/fa";
+import { useSelector, useDispatch } from 'react-redux';
+import { toggle } from "../../../store/favSlice";
 
 function ProductList() {
   const [productList, setProductList] = useState([]);
@@ -12,6 +15,15 @@ function ProductList() {
     };
     fetchData();
   }, []);
+
+  const dispatch = useDispatch();
+  const favorites = useSelector((state) => state.fav.value);
+
+  const handleFav = (e, id) => {
+    e.preventDefault();
+    dispatch(toggle(id));
+    console.log(id);
+  };
 
   return (
     <>
@@ -32,6 +44,9 @@ function ProductList() {
 
                   <button>Read more</button>
                 </div>
+                <span className="product-fav" onClick={(event) => handleFav(event, product.id)}>
+                  <FaHeart className={`icon-fav ${favorites.includes(product.id) ? "active" : "none-active"}`}/>
+                </span>
               </div>
             </li>
           ))}

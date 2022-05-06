@@ -2,4 +2,22 @@
   display: block;
 }
 
+.product-fav {
+  .active {
+    color: red;
+  }
+  .none-active {
+    color: black;
+  }
+}
 
+.product-item {
+  position: relative;
+  .product-fav {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+}
